@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dashboard — Nexa Admin</title>
+<link rel="icon" href="../assets/images/logo.png">
+<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="../css/animations.css">
+<link rel="stylesheet" href="../css/responsive.css">
+<link rel="stylesheet" href="../css/admin.css">
+</head>
+<body class="admin">
+<div class="backdrop" aria-hidden="true"></div>
+
+<div class="admin-shell">
+  <aside class="admin-side" id="adminSidebar"></aside>
+
+  <main class="admin-main">
+    <div class="admin-topbar">
+      <div>
+        <h1>Dashboard</h1>
+        <p>An overview of your projects, services and incoming requests.</p>
+      </div>
+      <a href="../index.html" class="btn btn--ghost" target="_blank">View Live Site</a>
+    </div>
+
+    <div class="admin-grid" id="dashStats"></div>
+
+    <div class="admin-panel">
+      <div class="admin-panel__head">
+        <h2>Recent Project Requests</h2>
+        <a href="messages.html" class="btn btn--ghost" style="padding:.6rem 1.1rem;">View All</a>
+      </div>
+      <div id="dashRecentMessages"></div>
+    </div>
+  </main>
+</div>
+
+<script src="../js/storage.js"></script>
+<script src="../js/admin.js"></script>
+</body>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — Nexa Tech Dev</title>
+<meta name="description" content="Tell Nexa Tech Dev about your project — websites, platforms and business systems built for the future.">
+<link rel="icon" href="assets/images/logo.png">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/animations.css">
+<link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+<a href="#main" class="skip-link">Skip to content</a>
+
+<div class="backdrop" aria-hidden="true"></div>
+<canvas id="particle-canvas" aria-hidden="true"></canvas>
+
+<div id="navbar-root"></div>
+
+<main id="main">
+
+  <section class="section" style="padding-top:9rem;">
+    <div class="container">
+      <div class="glass contact-panel" data-reveal="scale">
+        <div class="glass__sweep"></div>
+        <div class="contact-panel__head">
+          <span class="eyebrow" style="justify-content:center;">Have an Idea?</span>
+          <h2>Let's build it.</h2>
+          <p style="color:var(--ink-2); margin-top:.6rem;">Tell us about the project — we typically reply within one business day.</p>
+        </div>
+
+        <form id="contactForm" novalidate>
+          <div class="field-grid">
+            <div class="field">
+              <input type="text" name="name" id="name" placeholder=" " required>
+              <label for="name">Name</label>
+              <span class="field-error">Enter your full name.</span>
+            </div>
+            <div class="field">
+              <input type="email" name="email" id="email" placeholder=" " required>
+              <label for="email">Email</label>
+              <span class="field-error">Enter a valid email address.</span>
+            </div>
+            <div class="field">
+              <input type="tel" name="phone" id="phone" placeholder=" ">
+              <label for="phone">Phone</label>
+            </div>
+            <div class="field">
+              <input type="text" name="company" id="company" placeholder=" ">
+              <label for="company">Company</label>
+            </div>
+            <div class="field">
+              <select name="projectType" id="projectType">
+                <option value="" disabled selected hidden></option>
+                <option>Website</option>
+                <option>Web Application</option>
+                <option>Management System</option>
+                <option>E-Commerce</option>
+                <option>Booking System</option>
+                <option>Other</option>
+              </select>
+              <label for="projectType">Project Type</label>
+            </div>
+            <div class="field">
+              <select name="budget" id="budget">
+                <option value="" disabled selected hidden></option>
+                <option>Under $5,000</option>
+                <option>$5,000 – $15,000</option>
+                <option>$15,000 – $40,000</option>
+                <option>$40,000+</option>
+              </select>
+              <label for="budget">Budget</label>
+            </div>
+            <div class="field full">
+              <textarea name="message" id="message" placeholder=" " required></textarea>
+              <label for="message">Message</label>
+              <span class="field-error">Tell us a little more about the project.</span>
+            </div>
+          </div>
+
+          <div style="text-align:center;">
+            <button type="submit" class="btn btn--primary" style="width:100%; justify-content:center;">Transmit Project Request</button>
+          </div>
+          <p class="submit-status" id="submitStatus" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:0;">
+    <div class="container">
+      <div class="about-grid">
+        <div class="glass about-card" data-reveal>
+          <div class="glass__sweep"></div>
+          <h3>Email</h3>
+          <p><a href="mailto:hello@nexatechdev.com" data-contact-email>hello@nexatechdev.com</a></p>
+        </div>
+        <div class="glass about-card" data-reveal style="--d:.08s">
+          <div class="glass__sweep"></div>
+          <h3>Phone</h3>
+          <p><a href="tel:+15550194420" data-contact-phone>+1 (555) 019-4420</a></p>
+        </div>
+        <div class="glass about-card" data-reveal style="--d:.16s">
+          <div class="glass__sweep"></div>
+          <h3>Response Time</h3>
+          <p>We reply to every project request within one business day.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<div id="footer-root"></div>
+
+<script src="js/storage.js"></script>
+<script src="js/theme.js"></script>
+<script src="js/main.js"></script>
+<script src="js/fluid-background.js"></script>
+<script src="js/particles.js"></script>
+<script src="js/cursor.js"></script>
+<script src="js/animations.js"></script>
+<script src="js/contact.js"></script>
+</body>
+</html>

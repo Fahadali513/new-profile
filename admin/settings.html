@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Settings — Nexa Admin</title>
+<link rel="icon" href="../assets/images/logo.png">
+<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="../css/animations.css">
+<link rel="stylesheet" href="../css/responsive.css">
+<link rel="stylesheet" href="../css/admin.css">
+</head>
+<body class="admin">
+<div class="backdrop" aria-hidden="true"></div>
+
+<div class="admin-shell">
+  <aside class="admin-side" id="adminSidebar"></aside>
+
+  <main class="admin-main">
+    <div class="admin-topbar">
+      <div>
+        <h1>Settings</h1>
+        <p>Site content, contact details and the ambient-environment controls.</p>
+      </div>
+    </div>
+
+    <form id="settingsForm">
+      <div class="admin-panel">
+        <div class="admin-panel__head"><h2>Hero Content</h2></div>
+        <div class="admin-form">
+          <div class="full">
+            <label for="s-heroLabel">Eyebrow Label</label>
+            <input type="text" id="s-heroLabel" name="heroLabel">
+          </div>
+          <div class="full">
+            <label for="s-heroHeading">Heading</label>
+            <textarea id="s-heroHeading" name="heroHeading"></textarea>
+          </div>
+          <div class="full">
+            <label for="s-heroDescription">Description</label>
+            <textarea id="s-heroDescription" name="heroDescription"></textarea>
+          </div>
+        </div>
+      </div>
+
+      <div class="admin-panel">
+        <div class="admin-panel__head"><h2>Statistics</h2></div>
+        <div class="admin-form">
+          <div><label for="s-statValue0">Stat 1 Value</label><input type="number" id="s-statValue0" name="statValue0"></div>
+          <div><label for="s-statLabel0">Stat 1 Label</label><input type="text" id="s-statLabel0" name="statLabel0"></div>
+          <div><label for="s-statValue1">Stat 2 Value</label><input type="number" id="s-statValue1" name="statValue1"></div>
+          <div><label for="s-statLabel1">Stat 2 Label</label><input type="text" id="s-statLabel1" name="statLabel1"></div>
+          <div><label for="s-statValue2">Stat 3 Value</label><input type="number" id="s-statValue2" name="statValue2"></div>
+          <div><label for="s-statLabel2">Stat 3 Label</label><input type="text" id="s-statLabel2" name="statLabel2"></div>
+          <div><label for="s-statValue3">Stat 4 Value</label><input type="number" id="s-statValue3" name="statValue3"></div>
+          <div><label for="s-statLabel3">Stat 4 Label</label><input type="text" id="s-statLabel3" name="statLabel3"></div>
+        </div>
+      </div>
+
+      <div class="admin-panel">
+        <div class="admin-panel__head"><h2>Contact &amp; Social Links</h2></div>
+        <div class="admin-form">
+          <div><label for="s-contactEmail">Contact Email</label><input type="email" id="s-contactEmail" name="contactEmail"></div>
+          <div><label for="s-contactPhone">Contact Phone</label><input type="text" id="s-contactPhone" name="contactPhone"></div>
+          <div><label for="s-socialGithub">GitHub URL</label><input type="url" id="s-socialGithub" name="socialGithub"></div>
+          <div><label for="s-socialLinkedin">LinkedIn URL</label><input type="url" id="s-socialLinkedin" name="socialLinkedin"></div>
+          <div><label for="s-socialTwitter">Twitter / X URL</label><input type="url" id="s-socialTwitter" name="socialTwitter"></div>
+          <div><label for="s-socialInstagram">Instagram URL</label><input type="url" id="s-socialInstagram" name="socialInstagram"></div>
+        </div>
+      </div>
+
+      <div class="admin-panel">
+        <div class="admin-panel__head"><h2>Animation Controls</h2></div>
+
+        <div class="toggle-row">
+          <div class="toggle-row__label"><b>Fluid Background</b><span>Large flowing blob shapes behind the content.</span></div>
+          <div class="switch"><input type="checkbox" id="s-fluidBackground" name="fluidBackground"><label for="s-fluidBackground"></label></div>
+        </div>
+        <div class="toggle-row">
+          <div class="toggle-row__label"><b>Particles</b><span>Floating ambient particle field.</span></div>
+          <div class="switch"><input type="checkbox" id="s-particles" name="particles"><label for="s-particles"></label></div>
+        </div>
+        <div class="toggle-row">
+          <div class="toggle-row__label"><b>Custom Cursor</b><span>Glowing cursor replacement on desktop.</span></div>
+          <div class="switch"><input type="checkbox" id="s-customCursor" name="customCursor"><label for="s-customCursor"></label></div>
+        </div>
+        <div class="toggle-row">
+          <div class="toggle-row__label"><b>Parallax</b><span>Mouse-reactive depth on the background and hero.</span></div>
+          <div class="switch"><input type="checkbox" id="s-parallax" name="parallax"><label for="s-parallax"></label></div>
+        </div>
+        <div class="toggle-row">
+          <div class="toggle-row__label"><b>Card 3D Effect</b><span>Cards tilt subtly toward the cursor on hover.</span></div>
+          <div class="switch"><input type="checkbox" id="s-card3d" name="card3d"><label for="s-card3d"></label></div>
+        </div>
+        <div class="toggle-row">
+          <div class="toggle-row__label"><b>Ambient Glow</b><span>Cursor-following light glow behind content.</span></div>
+          <div class="switch"><input type="checkbox" id="s-ambientGlow" name="ambientGlow"><label for="s-ambientGlow"></label></div>
+        </div>
+        <div class="toggle-row">
+          <div class="toggle-row__label"><b>Animation Intensity</b><span>Overall particle density and motion strength.</span></div>
+          <select id="s-intensity" name="intensity" style="width:160px; padding:.6rem .8rem; border-radius:8px; border:1px solid var(--border-soft); background:rgba(255,255,255,.03); color:var(--ink-0);">
+            <option value="low">Low</option>
+            <option value="medium">Medium</option>
+            <option value="high">High</option>
+          </select>
+        </div>
+      </div>
+
+      <div style="display:flex; align-items:center; gap:1.2rem;">
+        <button type="submit" class="btn btn--primary">Save Settings</button>
+        <span id="settingsStatus" style="font-family:var(--mono); font-size:.78rem; color:var(--cyan);"></span>
+      </div>
+    </form>
+  </main>
+</div>
+
+<script src="../js/storage.js"></script>
+<script src="../js/admin.js"></script>
+</body>
+</html>

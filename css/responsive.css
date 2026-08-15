@@ -1,0 +1,53 @@
+/* ==========================================================================
+   NEXA TECH DEV — responsive.css
+   ========================================================================== */
+
+@media (max-width: 1100px){
+  .hero__grid{ grid-template-columns:1fr; gap:2.5rem; }
+  .core-wrap{ max-width:400px; order:-1; }
+  .services-grid{ grid-template-columns:repeat(2, 1fr); }
+  .projects-grid{ grid-template-columns:repeat(2, 1fr); }
+  .about-grid, .values-row{ grid-template-columns:repeat(2, 1fr); }
+}
+
+@media (max-width: 860px){
+  .navbar__links{ display:none; }
+  .navbar__toggle{ display:flex; }
+  .navbar__cta.btn{ display:none; }
+  .stats{ grid-template-columns:repeat(2, 1fr); }
+  .field-grid{ grid-template-columns:1fr; }
+  .footer__top{ flex-direction:column; }
+}
+
+@media (max-width: 640px){
+  :root{ --edge:1rem; }
+  .services-grid{ grid-template-columns:1fr; }
+  .projects-grid{ grid-template-columns:1fr; }
+  .about-grid, .values-row{ grid-template-columns:1fr; }
+  .hero__meta{ gap:1.4rem; flex-wrap:wrap; }
+  .hero__actions .btn{ flex:1; justify-content:center; }
+  .cursor-dot, .cursor-ring{ display:none; }
+  .timeline__item{ padding-left:3.4rem; }
+  .timeline__track{ left:18px; }
+  .timeline__dot{ left:10px; }
+}
+
+/* -------- mobile nav drawer -------- */
+.navbar__drawer{
+  position:fixed; inset:0; z-index:490;
+  background:rgba(5,7,13,.92);
+  backdrop-filter:blur(14px);
+  display:flex; flex-direction:column; align-items:center; justify-content:center;
+  gap:1.6rem;
+  opacity:0; visibility:hidden;
+  transition:opacity .4s var(--ease), visibility .4s var(--ease);
+}
+.navbar__drawer.is-open{ opacity:1; visibility:visible; }
+.navbar__drawer a{
+  font-family:var(--display); font-size:1.6rem; color:var(--ink-0);
+}
+.navbar__drawer .btn{ margin-top:1rem; }
+
+@media (min-width: 861px){
+  .navbar__drawer{ display:none; }
+}

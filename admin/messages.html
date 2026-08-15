@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Messages — Nexa Admin</title>
+<link rel="icon" href="../assets/images/logo.png">
+<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="../css/animations.css">
+<link rel="stylesheet" href="../css/responsive.css">
+<link rel="stylesheet" href="../css/admin.css">
+</head>
+<body class="admin">
+<div class="backdrop" aria-hidden="true"></div>
+
+<div class="admin-shell">
+  <aside class="admin-side" id="adminSidebar"></aside>
+
+  <main class="admin-main">
+    <div class="admin-topbar">
+      <div>
+        <h1>Messages</h1>
+        <p>Project requests submitted through the contact form.</p>
+      </div>
+    </div>
+
+    <div class="admin-panel">
+      <table class="admin-table">
+        <thead>
+          <tr><th>Name</th><th>Email</th><th>Project Type</th><th>Budget</th><th>Received</th><th>Actions</th></tr>
+        </thead>
+        <tbody id="messagesTableBody"></tbody>
+      </table>
+    </div>
+  </main>
+</div>
+
+<script src="../js/storage.js"></script>
+<script src="../js/admin.js"></script>
+</body>
+</html>

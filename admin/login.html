@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admin Login — Nexa Tech Dev</title>
+<link rel="icon" href="../assets/images/logo.png">
+<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="../css/animations.css">
+<link rel="stylesheet" href="../css/responsive.css">
+<link rel="stylesheet" href="../css/admin.css">
+</head>
+<body class="admin">
+<div class="backdrop" aria-hidden="true"></div>
+
+<div class="admin-login">
+  <div class="glass" data-reveal="scale">
+    <div class="glass__sweep"></div>
+    <img src="../assets/images/logo.png" alt="Nexa Tech Dev" style="width:38px; height:38px;">
+    <h1>Nexa Admin</h1>
+    <p>Sign in to manage projects, services and site content.</p>
+
+    <form id="loginForm">
+      <div class="field">
+        <label for="loginEmail">Email</label>
+        <input type="email" id="loginEmail" name="email" value="admin@nexatechdev.com" required>
+      </div>
+      <div class="field">
+        <label for="loginPassword">Password</label>
+        <input type="password" id="loginPassword" name="password" value="••••••••" required>
+      </div>
+      <button type="submit" class="btn btn--primary" style="width:100%; justify-content:center;">Sign In</button>
+    </form>
+    <p class="admin-login__hint">Demo admin — any credentials sign you in. Data is stored locally in this browser.</p>
+  </div>
+</div>
+
+<script src="../js/storage.js"></script>
+<script src="../js/main.js"></script>
+<script src="../js/fluid-background.js"></script>
+<script src="../js/admin.js"></script>
+</body>
+</html>
